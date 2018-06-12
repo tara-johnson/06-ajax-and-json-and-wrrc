@@ -83,5 +83,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
+    <script>
+    // This function is checking if there is data in local storage. If so, it parses the data, creates the article instances, and initializes the page. If there is not data in local storage, it retrieves the data from the JSON file, creates the article instances and sets the data to local storage, as well as initializing the page.
+    Article.fetchAll();
+    </script>
   </body>
 </html>
