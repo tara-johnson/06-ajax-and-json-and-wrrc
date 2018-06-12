@@ -52,7 +52,7 @@ Article.fetchAll = () => {
     // DONE: If there was not local storage, we need to retrieve the data from hackerIpsum.json, load it to the page, and set it to local storage.
   } else {
     
-    $.getJSON('../data/hackerIpsum.json')
+    $.getJSON('data/hackerIpsum.json')
       .then(function(data) {
         Article.loadAll(data);
 
